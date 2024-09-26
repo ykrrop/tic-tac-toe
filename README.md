@@ -1,54 +1,3 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-
 # Tic-Tac-Toe Game
 
 A simple Tic-Tac-Toe game built with React, TypeScript, and Tailwind CSS.
@@ -77,5 +26,55 @@ A simple Tic-Tac-Toe game built with React, TypeScript, and Tailwind CSS.
 
     ```bash
     git clone https://github.com/yourusername/tic-tac-toe.git
+    ```
     
+2. Navigate to the project directory:
+   ```bash
+   cd tic-tac-toe
+   ```
+3. Install the dependencies:
+   ```bash 
+    npm install 
+   ``` 
+## Usage
+To start the game locally, run the following command: 
+```bash 
+npm start
+```
 
+This will start the development server and open the game in your default browser. You can now play Tic-Tac-Toe.
+
+Gameplay
+ • Click on any cell to place your mark (X or O).
+ • The game automatically switches between players.
+ • The game ends when one player wins or when there are no more available moves (draw).
+ • Click "Play Again" to restart the game.
+ 
+Technologies Used
+ • React: A JavaScript library for building user interfaces.
+ • TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
+ • Tailwind CSS: A utility-first CSS framework for rapid UI development
+
+Project Structure
+```
+tic-tac-toe/
+├── public/               # Public assets
+│   └── index.html        # Main HTML file
+├── src/                  # Source files
+│   ├── components/       # Reusable components
+│   │   ├── Board.tsx     # Board component
+│   │   └── Square.tsx    # Square component
+│   ├── App.tsx           # Root component
+│   ├── index.tsx         # Entry point for React
+│   └── styles/           # Tailwind CSS styles
+│       └── index.css     # Main stylesheet
+├── package.json          # NPM scripts and dependencies
+└── README.md             # Project documentation
+```
+
+Contributing
+Contributions are welcome! If you have any ideas or suggestions for improvements, please open an issue or create a pull request.
+
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
