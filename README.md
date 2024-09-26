@@ -48,3 +48,34 @@ export default tseslint.config({
   },
 })
 ```
+
+# Tic-Tac-Toe Game
+
+A simple Tic-Tac-Toe game built with React, TypeScript, and Tailwind CSS.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Gameplay](#gameplay)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Interactive Tic-Tac-Toe game with a responsive UI.
+- Keeps track of player turns and displays the winner.
+- Includes a "Play Again" button to restart the game after it ends.
+- Clear indication of the game status (Next player, Winner, or Draw).
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/yourusername/tic-tac-toe.git
+    
+
